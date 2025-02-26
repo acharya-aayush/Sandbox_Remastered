@@ -1,2 +1,1 @@
-# Ultimate_Sandbox
-Sandbox mod for Unciv 
+Just a sandbox mod for unciv
