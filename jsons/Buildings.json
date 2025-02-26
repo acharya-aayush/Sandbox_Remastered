@@ -1,0 +1,904 @@
+[
+    
+        {
+          "name": "Unit Movement",
+          "cost": 10000,
+          "uniques": [
+            "Unbuildable <for [AI player]>",
+            "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+            "[+3] Movement <for [Water] units>",
+                  "[+3] Movement <for [Land] units>"]
+        },
+        {
+            "name": "Terrain Buff",
+            "cost": 0,
+            "isNationalWonder": true,
+            "uniques": [
+              "Unbuildable <for [AI player]>",
+              "Can be purchased for [0] [Food] [in all cities]",
+              "Consumes [1] [Resource Points]",
+              "[-100]% Gold cost of acquiring tiles [in all cities]",
+              "[-90]% Culture cost of acquiring tiles [in all cities]"]
+            },
+          {
+            "name": "Items Buff",
+            "cost": 0,
+            "isNationalWonder": true,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "[100]% golden age length",
+                "Can be purchased for [0] [Food] [in all cities]",
+                "[Gold] cost of purchasing items in cities [-100]%",
+                "Quantity of strategic resources produced by the empire [100]% "
+                 ]
+
+          },
+          {
+            "name": "Horses",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Horses]"
+            ]
+
+          }
+          {
+            "name": "Iron",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Iron]"
+            ]
+
+          },
+          {
+            "name": "Coal",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Coal]"
+            ]
+
+          },
+          {
+            "name": "Oil",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Oil]"
+            ]
+
+          },
+          {
+            "name": "Aluminum",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Aluminum]"
+            ]
+
+          },
+          {
+            "name": "Aluminum",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Aluminum]"
+            ]
+
+          },  {
+            "name": "Uranium",
+            "cost": 10000,
+            "uniques": [
+                "Consumes [1] [Resource Points]",
+                "Can be purchased for [0] [Food] [in all cities]",
+            "Provides [10] [Uranium]"
+            ]
+
+          },
+      
+    // 模式开关
+    {
+        "name": "Sandbox Mode Key",
+        "cost": 0,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [
+            "Can only be built [in capital]",
+            "<in cities without a [Sandbox Mode Resource Points]> Only available"
+        ]
+    },
+    {
+        "name": "Sandbox Mode Resource Points",
+        "cost": 0,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [
+            "Can only be built [in capital]",
+            "<in cities with a [Sandbox Mode Key]> Only available",
+            "Destroyed when the city is captured",
+            "Provides [1024] [Resource Points] <in cities without a [Sandbox Mode Key]>"
+        ]
+    },
+    {
+        "name": "Sandbox Entity Resource Points",
+        "cost": 1,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [
+            "Consumes [1] [Resource Points]",
+            "Provides [1] [Resource Points]",
+            "Can only be built [in capital]",
+            "<in cities with a [Sandbox Mode Key]> Only available",
+            "Destroyed when the city is captured"
+        ]
+    },
+    
+    
+    
+    // 单城产出控制
+    // 单城回合金控制
+    {
+        "name": "-10 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":-10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [-10] [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "-100 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":-100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [-100] [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "No Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Nullifies [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "+10 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [10] [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "+50 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [50] [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "+150 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":150,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [150] [Gold] [in this city]"
+        ]
+    },
+    {
+        "name": "+500 Money",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "gold":500,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [500] [Gold] [in this city]"
+        ]
+    },
+    
+    {
+        "name": "+5 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [5] [Production] [in this city]"
+        ]
+    },
+    // 单城产能控制
+    {
+        "name": "+10 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [10] [Production] [in this city]"
+        ]
+    },
+    {
+        "name": "+20 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":20,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [20] [Production] [in this city]"
+        ]
+    },
+    {
+        "name": "+30 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":30,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [30] [Production] [in this city]"
+        ]
+    },
+    {
+        "name": "+50 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [50] [Production] [in this city]"
+        ]
+    },
+    {
+        "name": "+100 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [100] [Production] [in this city]"
+        ]
+    },
+    {
+        "name": "+200 Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "production":200,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Provides [200] [Production] [in this city]"
+        ]
+    },
+
+
+    {
+        "name": "No Production",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Nullifies [Production] [in this city]"
+        ]
+    },
+    
+    // 单城食物控制
+    {
+        "name": "+5 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":5,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [5] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+15 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":15,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [15] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+25 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":25,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [25] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+50 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [50] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+100 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [100] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+200 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":200,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [200] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "+500 Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":500,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [500] [Food] [in this city]"
+        ]
+    },
+    {
+        "name": "No Food",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "food":100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Nullifies [Food] [in this city]"
+        ]
+    },
+    
+    // 单城科研控制
+    {
+        "name": "No Science",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+         //   "Provides [1] [Resource Points]",
+            "Nullifies [Science] [in this city]"
+        ]
+    },
+
+    {
+        "name": "+10 Science",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "science":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [10] [Science] [in this city]"
+        ]
+    },
+    {
+        "name": "+20 Science",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "science":20,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [20] [Science] [in this city]"
+        ]
+    },
+    {
+        "name": "+50 Science",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "science":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [50] [Science] [in this city]"
+        ]
+    },
+    {
+        "name": "10x Science",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[1000]% [Science] [in this city]"
+        ]
+    },
+    
+    // 单城文化控制
+    {
+        "name": "No Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Nullifies [Culture] [in this city]"
+        ]
+    },
+    {
+        "name": "+10 Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "culture":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [10] [Culture] [in this city]"
+        ]
+    },
+    {
+        "name": "+50 Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "culture":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [50] [Culture] [in this city]"
+        ]
+    },
+    {
+        "name": "+150 Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "culture":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [150] [Culture] [in this city]"
+        ]
+    },
+    {
+        "name": "+550 Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "culture":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [550] [Culture] [in this city]"
+        ]
+    },
+    {
+        "name": "+1550 Culture",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "culture":50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Provides [1550] [Culture] [in this city]"
+        ]
+    },
+    
+    
+    // 单城宗教控制
+    {
+        "name": "No Faith",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "Nullifies [Faith] [in this city]"
+        ]
+    },
+    {
+        "name": "10x Faith",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[1000]% [Faith] [in this city]"
+        ]
+    },
+    {
+        "name": "+100 Faith",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "faith":100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [100] [Faith] [in this city]"
+        ]
+    },
+    {
+        "name": "+500 Faith",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "faith":500,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [500] [Faith] [in this city]"
+        ]
+    },
+    {
+        "name": "+1500 Faith",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "faith":1500,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [1500] [Faith] [in this city]"
+        ]
+    },
+    
+    // 单城快乐控制
+    {
+        "name": "Basic Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":1,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]"
+        ]
+    },
+    {
+        "name": "-5 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":-5,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [-5] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "-10 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":-10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [-10] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "-25 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":-25,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [-25] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "-50 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":-50,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [-50] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "+5 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":5,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [+5] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "+10 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":10,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [+10] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "+20 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":20,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [+20] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "+100 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "happiness":100,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [100] [Happiness] [in this city]"
+        ]
+    },
+    {
+        "name": "+1000 Happiness",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "happiness":1000,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Provides [1000] [Happiness] [in this city]"
+        ]
+    },
+    
+    
+    
+    
+    
+    // 补给控制
+    {
+        "name": "-50 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "[-50] Unit Supply"
+        ]
+    },
+    {
+        "name": "-20 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "[-20] Unit Supply"
+        ]
+    },
+    {
+        "name": "-10 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "[-10] Unit Supply"
+        ]
+    },
+    {
+        "name": "-5 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "[-5] Unit Supply"
+        ]
+    },
+    {
+        "name": "+5 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[5] Unit Supply"
+        ]
+    },
+    {
+        "name": "+10 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[10] Unit Supply"
+        ]
+    },
+    {
+        "name": "+20 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[20] Unit Supply"
+        ]
+    },
+    {
+        "name": "+50 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[50] Unit Supply"
+        ]
+    },
+    {
+        "name": "+100 Supply",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+          //  "Provides [1] [Resource Points]",
+            "[100] Unit Supply"
+        ]
+    },
+    
+    // 地块零时修建
+    {
+        "name": "Nullify Improvement Construction Time",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "[-99]% tile improvement construction time"
+        ]
+    },
+    
+    // 新单位无限经验
+    {
+        "name": "Plenty of Exp for New Units",
+        "cost": 0,
+        "isNationalWonder": true,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "New [All] units start with [32767] Experience [in all cities]"
+        ]
+    },
+    
+    // 触发胜利
+    {
+        "name": "Trigger Victory",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+           // "Provides [1] [Resource Points]",
+            "Triggers victory"
+        ]
+    }
+    
+    // 基础建筑复制模板
+    /*
+    {
+        "name": "Controller",
+        "cost": 10000,
+        "hurryCostModifier": 0,
+        "maintenance": 0,
+        "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
+            "Consumes [1] [Resource Points]",
+            "Provides [1] [Resource Points]",
+            
+        ]
+    },
+    */
+]
