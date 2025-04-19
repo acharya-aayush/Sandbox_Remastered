@@ -18,7 +18,7 @@
         "unitType": "Sandboxer",
         "strength": 32767,
         "movement": 20,
-        "cost": 99999991,
+        "cost": 110000,
         "hurryCostModifier": 0,
         "requiredResource": "Resource Points",
         "uniques": [
