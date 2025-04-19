@@ -3,7 +3,7 @@
         "name": "Sandbox Shelter",
         "unitType": "Sandboxer",
         "movement": 512,
-        "cost": 1,
+        "cost": 9999991,
         "hurryCostModifier": 0,
         "requiredResource": "Resource Points",
         "uniques": [
@@ -18,7 +18,7 @@
         "unitType": "Sandboxer",
         "strength": 32767,
         "movement": 20,
-        "cost": 1,
+        "cost": 99999991,
         "hurryCostModifier": 0,
         "requiredResource": "Resource Points",
         "uniques": [
@@ -46,7 +46,7 @@
         "strength": 32767,
         "rangedStrength": 32767,
         "movement": 10,
-        "cost": 1,
+        "cost": 999999991,
         "hurryCostModifier": 0,
         "requiredResource": "Resource Points",
         "uniques": [
