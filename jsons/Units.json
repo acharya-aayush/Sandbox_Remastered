@@ -60,7 +60,6 @@
             "Unit will heal every turn, even if it performs an action",
             "Can see over obstacles",
             "Can see invisible [All] units",
-           // "May capture killed [All] units",
             "[2] Sight <for [Embarked] units>",
             "May attack when embarked",
             "Defense bonus when embarked",
