@@ -780,6 +780,286 @@
             "Consumes [1] [Resource Points]",
             "Triggers victory"
         ]
+    },
+    {
+        "name": "Stupa",
+        "replaces": "Temple",
+        "uniqueTo": "Nepal",
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "requiredBuilding": "Shrine",
+        "culture": 2,
+        "faith": 2,
+        "uniques": [
+            "[+1 Faith] from [Mountain] tiles [in this city]",
+            "[+1 Culture] from [Mountain] tiles [in this city]",
+            "Hidden when religion is disabled"
+        ]
+    },
+    {
+        "name": "Hydroelectric Dam",
+        "uniqueTo": "Nepal",
+        "cost": 360,
+        "maintenance": 3,
+        "production": 4,
+        "uniques": [
+            "Must be next to [River]",
+            "[+2 Production] from [River] tiles [in this city]",
+            "Provides [1] [Aluminum]"
+        ],
+        "requiredTech": "Electricity"
+    },
+    {
+        "name": "Trekking Lodge",
+        "uniqueTo": "Nepal",
+        "cost": 200,
+        "maintenance": 2,
+        "gold": 3,
+        "culture": 2,
+        "uniques": [
+            "Only available <in cities with a [Mountain] within [2] tiles>",
+            "[+1 Gold, +1 Culture] from [Mountain] tiles [in this city]",
+            "[+2 Gold] from each Trade Route"
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Sherpa Training Camp",
+        "uniqueTo": "Nepal",
+        "cost": 120,
+        "maintenance": 1,
+        "uniques": [
+            "Only available <in cities with a [Mountain] within [1] tiles>",
+            "New [All] units start with [1] Experience [in this city]",
+            "[All] units built [in this city] receive the [Altitude Training] promotion"
+        ],
+        "requiredTech": "Bronze Working"
+    },
+    {
+        "name": "Singha Durbar",
+        "uniqueTo": "Nepal",
+        "isNationalWonder": true,
+        "cost": 750,
+        "maintenance": 4,
+        "culture": 5,
+        "gold": 4,
+        "uniques": [
+            "Can only be built [in capital]",
+            "[+15]% [Culture] [in all cities]",
+            "[+2 Culture] from [Palace] <in this city>",
+            "[+1 Gold] from every [2] population [in this city]",
+            "Provides [1] [Great Administrator] at regular intervals"
+        ],
+        "quote": "'From this palace, the diverse lands of Nepal shall be united as one nation.' - Prithvi Narayan Shah",
+        "requiredTech": "Civil Service"
+    },
+    {
+        "name": "Lumbini World Heritage Site",
+        "uniqueTo": "Nepal",
+        "isNationalWonder": true,
+        "cost": 400,
+        "maintenance": 3,
+        "faith": 4,
+        "culture": 5,
+        "gold": 2,
+        "uniques": [
+            "[+15]% [Faith] [in all cities]",
+            "[+15]% [Culture] [in all cities]",
+            "[All] newly-trained [Missionary] units [in this city] receive the [Peaceful] promotion",
+            "[+1 Faith] from [Jungle] tiles [in all cities]",
+            "[+2 Culture] from [Forest] tiles [in all cities]",
+            "[+2 Gold] from each Trade Route",
+            "Provides [1] [Great Prophet] at regular intervals"
+        ],
+        "quote": "'Nepal, birthplace of Buddha, welcomes all faiths in the spirit of peace and tolerance.'",
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Chitwan National Park",
+        "uniqueTo": "Nepal",
+        "isNationalWonder": true,
+        "cost": 500,
+        "maintenance": 3,
+        "gold": 6,
+        "culture": 4,
+        "science": 2,
+        "uniques": [
+            "Only available <in cities with a [Jungle] within [2] tiles>",
+            "[+2 Gold, +1 Science] from [Jungle] tiles [in all cities]",
+            "[+1 Culture] from [Forest] tiles [in all cities]",
+            "[+25]% [Gold] from Trade Routes",
+            "Provides [1] [Great Scientist] at regular intervals"
+        ],
+        "quote": "'In the Terai jungles, Bengal tigers roam and one-horned rhinos graze - nature's greatest treasures.' - David Attenborough",
+        "requiredTech": "Scientific Theory"
+    },
+    {
+        "name": "Janakpur Dham",
+        "uniqueTo": "Nepal",
+        "isNationalWonder": true,
+        "cost": 300,
+        "maintenance": 2,
+        "faith": 6,
+        "culture": 3,
+        "uniques": [
+            "Only available <in cities with a [Plains] within [2] tiles>",
+            "[+25]% [Faith] [in all cities]",
+            "[+1 Faith] from [Plains] tiles [in all cities]",
+            "[+1 Culture] from [River] tiles [in all cities]",
+            "Resting point for Missionaries",
+            "Provides [1] [Great Prophet] at regular intervals"
+        ],
+        "quote": "'Where Sita was born and Rama wed, the Hindu heritage of Nepal shines eternal.' - Ramayana",
+        "requiredTech": "Theology"
+    },
+    {
+        "name": "Rhododendron Garden",
+        "uniqueTo": "Nepal",
+        "cost": 150,
+        "maintenance": 2,
+        "culture": 3,
+        "happiness": 2,
+        "uniques": [
+            "Only available <in cities with a [Hill] within [2] tiles>",
+            "[+1 Culture, +1 Happiness] from [Forest] tiles [in this city]",
+            "[+1 Culture] from [Jungle] tiles [in this city]",
+            "[+10]% [Culture] [in this city]"
+        ],
+        "requiredTech": "Calendar"
+    },
+    {
+        "name": "Pokhara Lake Resort",
+        "uniqueTo": "Nepal",
+        "cost": 250,
+        "maintenance": 3,
+        "gold": 4,
+        "culture": 2,
+        "happiness": 3,
+        "uniques": [
+            "Must be next to [Lakes]",
+            "[+2 Gold, +1 Culture] from [Lakes] tiles [in this city]",
+            "[+15]% [Gold] from Trade Routes [in this city]",
+            "[+1 Happiness] from [Mountain] tiles [in this city]"
+        ],
+        "requiredTech": "Optics"
+    },
+    {
+        "name": "Gurkha Barracks",
+        "uniqueTo": "Nepal",
+        "replaces": "Barracks",
+        "cost": 75,
+        "maintenance": 1,
+        "uniques": [
+            "New [All] units start with [15] Experience [in this city]",
+            "[All] units built [in this city] receive the [Mountain Fighter] promotion",
+            "[+25]% Production when constructing [Melee] units [in this city]",
+            "[+25]% Production when constructing [Gunpowder] units [in this city]"
+        ]
+    },
+    {
+        "name": "Himalayan Observatory",
+        "uniqueTo": "Nepal",
+        "cost": 350,
+        "maintenance": 3,
+        "science": 4,
+        "uniques": [
+            "Only available <in cities with a [Mountain] within [1] tiles>",
+            "[+2 Science] from [Mountain] tiles [in this city]",
+            "[+1 Science] from [Hill] tiles [in this city]",
+            "[25]% of food is carried over after population increases [in this city]"
+        ],
+        "requiredTech": "Astronomy"
+    },
+    {
+        "name": "Teahouse",
+        "uniqueTo": "Nepal",
+        "cost": 100,
+        "maintenance": 1,
+        "gold": 2,
+        "happiness": 1,
+        "uniques": [
+            "[+1 Gold] from [Hill] tiles [in this city]",
+            "[+1 Happiness] from [Mountain] tiles [in this city]",
+            "[+10]% [Food] [in this city]"
+        ],
+        "requiredTech": "Calendar"
+    },
+    {
+        "name": "Yak Farm",
+        "uniqueTo": "Nepal",
+        "cost": 60,
+        "maintenance": 1,
+        "food": 2,
+        "production": 1,
+        "uniques": [
+            "Only available <in cities with a [Hill] within [2] tiles>",
+            "[+1 Food] from [Hill] tiles [in this city]",
+            "[+1 Production] from [Grassland] tiles [in this city]",
+            "Provides [1] [Cattle]"
+        ],
+        "requiredTech": "Animal Husbandry"
+    },
+    {
+        "name": "Terai Rice Terraces",
+        "uniqueTo": "Nepal",
+        "cost": 120,
+        "maintenance": 2,
+        "food": 3,
+        "uniques": [
+            "Only available <in cities with a [Plains] within [2] tiles>",
+            "[+2 Food] from [Plains] tiles [in this city]",
+            "[+1 Food] from [River] tiles [in this city]",
+            "[+10]% [Food] [in this city]"
+        ],
+        "requiredTech": "Agriculture"
+    },
+    {
+        "name": "Madhesi Cultural Center",
+        "uniqueTo": "Nepal",
+        "cost": 200,
+        "maintenance": 2, 
+        "culture": 3,
+        "happiness": 2,
+        "uniques": [
+            "Only available <in cities with a [Plains] within [1] tiles>",
+            "[+1 Culture] from [Plains] tiles [in this city]",
+            "[+1 Happiness] from [River] tiles [in this city]",
+            "[+15]% [Culture] [in this city]"
+        ],
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "Himalayan Monastery",
+        "uniqueTo": "Nepal",
+        "isNationalWonder": true,
+        "cost": 400,
+        "maintenance": 3,
+        "faith": 4,
+        "science": 3,
+        "uniques": [
+            "Only available <in cities with a [Mountain] within [1] tiles>",
+            "[+2 Faith] from [Mountain] tiles [in all cities]",
+            "[+1 Science] from [Hill] tiles [in all cities]",
+            "[All] newly-trained [Missionary] units [in this city] receive the [Mountain Walker] promotion",
+            "Provides [1] [Great Scientist] at regular intervals"
+        ],
+        "quote": "'In the silence of the peaks, wisdom flows like mountain streams.' - Tibetan Buddhist Saying",
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Bagmati Riverfront",
+        "uniqueTo": "Nepal",
+        "cost": 180,
+        "maintenance": 3,
+        "gold": 3,
+        "culture": 2,
+        "uniques": [
+            "Must be next to [River]",
+            "[+2 Gold] from [River] tiles [in this city]",
+            "[+1 Culture] from [River] tiles [in this city]",
+            "[+20]% [Gold] from Trade Routes [in this city]"
+        ],
+        "requiredTech": "Currency"
     }
 
 ]

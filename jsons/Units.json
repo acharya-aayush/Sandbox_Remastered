@@ -35,9 +35,9 @@
             "Defense bonus when embarked",
             "Eliminates combat penalty for attacking across a coast",
             "Eliminates combat penalty for attacking over a river",
-            "[1] Movement point cost to disembark",
-            "[1] Movement point cost to embark",
-            "[10 additional attacks per turn"
+            "[1]Movementpointcosttodisembark",
+            "[1]Movementpointcosttoembark",
+            "[10]additionalattacksperturn"
         ]
     },
     {
@@ -65,9 +65,10 @@
             "Defense bonus when embarked",
             "Eliminates combat penalty for attacking across a coast",
             "Eliminates combat penalty for attacking over a river",
-            "[1] Movement point cost to disembark",
-            "[1] Movement point cost to embark",
+            "[1] Movement point cost to disembark",
+            "[1] Movement point cost to embark",
             "[10] additional attacks per turn"
         ]
     }
 ]
+
