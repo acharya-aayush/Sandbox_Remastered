@@ -1,5 +1,15 @@
 {
-    "name": "Ultimate Sandbox",
-    "version": "1.0",
-    "description": "So this is my Custom mod for the Unciv for u know....Sandbox purpose...!"
+    "name": "Ultimate Sandbox Remastered + Nepal Nation",
+    "version": "2.0",
+    "description": "Enhanced sandbox mod featuring the complete Nepal civilization! Play as Nepal with 12 unique buildings, 12 military units, and authentic cultural representation. Includes original sandbox elements plus the authentic 'Never Conquered' Nepal nation with Gurkha warriors, Himalayan buildings, and historical accuracy.",
+    "author": "Aayush Acharya",
+    "url": "https://github.com/acharya-aayush/Sandbox_Remastered",
+    "modOptions": {
+        "uniques": [
+            "Nepal Civilization: Complete military roster from ancient to modern era",
+            "Authentic Buildings: Representing all three geographic regions of Nepal",
+            "Cultural Accuracy: Hindu-majority secular nation theme",
+            "Historical Theme: Never Conquered civilization bonuses"
+        ]
+    }
 }

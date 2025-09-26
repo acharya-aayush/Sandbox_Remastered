@@ -558,7 +558,7 @@
         "happiness":1,
         "maintenance": 0,
         "uniques": [ "Can be purchased for [0] [Food] [in all cities]",
-            "Consumes [1] [Resource Points]",
+            "Consumes [1] [Resource Points]"
         ]
     },
     {
